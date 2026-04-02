@@ -1,0 +1,151 @@
+.department-container {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  gap: 30px;
+  font-family: Arial, sans-serif;
+}
+
+/* ================= SIDEBAR ================= */
+.sidebar {
+  width: 260px;
+}
+
+/* MENU */
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  background: #8fd0f6;
+  padding: 10px;
+  margin: 6px 0;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.menu li:hover {
+  background: #6fc2f0;
+}
+
+.menu-link {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: #000;
+}
+
+/* ACTIVE MENU */
+.menu-link.active {
+  background: #0d1b2a;
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/* ================= OTHER DEPARTMENTS ================= */
+.other-dept-title {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.dept-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.dept-link {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 0;
+  border-left: 3px solid transparent;
+}
+
+.dept-link:hover {
+  color: #0077cc;
+}
+
+.dept-link.active {
+  color: #0077cc;
+  font-weight: bold;
+  border-left: 3px solid #0077cc;
+  padding-left: 8px;
+}
+
+/* ================= MAIN CONTENT ================= */
+.content {
+  flex: 1;
+  position: relative;
+}
+
+.content h1,
+.content h2 {
+  margin-bottom: 20px;
+}
+
+.content-body {
+  max-width: 650px;
+  line-height: 1.6;
+}
+
+.signature {
+  margin-top: 20px;
+  font-style: italic;
+}
+
+/* ================= OVERVIEW CARD ================= */
+.overview-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  line-height: 1.7;
+}
+
+.overview-card h3 {
+  margin-top: 25px;
+}
+
+/* ================= HOD CARD ================= */
+.hod-card {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 220px;
+  text-align: center;
+}
+
+.hod-image {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.hod-card h4 {
+  margin: 10px 0 4px;
+}
+
+.hod-card span {
+  font-size: 14px;
+  color: #555;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .department-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .hod-card {
+    position: static;
+    margin-top: 20px;
+  }
+}

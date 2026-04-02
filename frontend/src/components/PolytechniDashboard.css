@@ -1,0 +1,49 @@
+.dashboard-navbar {
+  width: 100%;
+  border-top: 3px solid #0b3c8a;
+  border-bottom: 1px solid #ddd;
+  background-color: #ffffff;
+  margin-top: 110px;
+}
+
+.dashboard-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0 20px;
+  white-space: nowrap;
+}
+
+.dashboard-menu li {
+  padding: 15px 18px;
+  font-size: 15px;
+  color: #000;
+  cursor: pointer;
+  position: relative;
+}
+
+.dashboard-menu li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 20%;
+  height: 60%;
+  width: 1px;
+  background-color: #ddd;
+}
+
+.dashboard-menu li:hover {
+  color: #0b3c8a;
+}
+
+.dashboard-menu li.active {
+  color: #0b3c8a;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.arrow {
+  font-size: 10px;
+  margin-left: 4px;
+}

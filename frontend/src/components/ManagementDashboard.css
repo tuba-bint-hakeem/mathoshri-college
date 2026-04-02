@@ -1,0 +1,64 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* MAIN WRAPPER (comes after top navbar) */
+.management-dashboard {
+  margin-top: 100px; /* top navbar height */
+  width: 100%;
+}
+
+/* MENU BAR */
+.menu-bar {
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e6e6e6;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* MENU LIST */
+.menu-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+}
+
+/* MENU ITEM */
+.menu-list li {
+  padding: 0 18px;
+  border-right: 1px solid #e5e5e5;
+  height: 55px;
+  display: flex;
+  align-items: center;
+}
+
+.menu-list li:last-child {
+  border-right: none;
+}
+
+/* LINKS */
+.menu-list li a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+/* ACTIVE (HOME) */
+.menu-list li.active a {
+  color: #0047ff;
+  text-decoration: underline;
+}
+
+/* DROPDOWN ARROW */
+.menu-list li.has-arrow a::after {
+  content: " ▼";
+  font-size: 10px;
+  margin-left: 4px;
+  color: #555;
+}

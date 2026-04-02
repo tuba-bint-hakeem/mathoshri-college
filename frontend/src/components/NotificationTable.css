@@ -1,0 +1,96 @@
+.notification-page {
+  padding: 20px;
+  background: #f8fafc;
+  margin: 100px;
+}
+
+/* HEADER */
+.notification-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.notification-header h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.notification-header p {
+  font-size: 14px;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+.header-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+
+}
+
+/* DROPDOWN */
+.school-select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  font-size: 14px;
+}
+
+/* ADD BUTTON */
+.add-notification-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.add-notification-btn:hover {
+  background: #1e40af;
+}
+
+/* TABLE */
+.notification-table {
+  width: 100%;
+  background: white;
+  border-radius: 12px;
+  border-collapse: collapse;
+  overflow: hidden;
+}
+
+.notification-table th {
+  text-align: left;
+  font-size: 12px;
+  color: #6b7280;
+  padding: 14px;
+  background: #f9fafb;
+}
+
+.notification-table td {
+  padding: 14px;
+  border-top: 1px solid #e5e7eb;
+  font-size: 14px;
+}
+
+.action-icons svg {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.action-icons svg:first-child {
+  color: #2563eb;
+}
+
+.action-icons svg:last-child {
+  color: #ef4444;
+}

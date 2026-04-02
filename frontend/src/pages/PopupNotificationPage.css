@@ -1,0 +1,112 @@
+/* Container for the whole popup page */
+.popup-page-container {
+  padding: 16px;
+  margin-top: 300px; /* Pushes content 300px from top */
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Heading */
+.popup-page-container h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 28px;
+}
+
+/* Upload sections */
+.popup-upload {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.popup-upload input[type="text"],
+.popup-upload input[type="file"] {
+  padding: 8px 12px;
+  font-size: 16px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.popup-upload button {
+  padding: 8px 16px;
+  background-color: #4f46e5; /* nice purple button */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.popup-upload button:hover {
+  background-color: #4338ca;
+}
+
+/* Table styling */
+.popup-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.popup-table th,
+.popup-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.popup-table th {
+  background-color: #f3f4f6;
+  font-weight: bold;
+}
+
+.popup-table img {
+  border-radius: 6px;
+}
+
+/* Actions buttons */
+.popup-actions button {
+  margin: 0 5px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.popup-actions .activate {
+  background-color: #10b981; /* green */
+  color: white;
+}
+
+.popup-actions .activate:hover {
+  background-color: #059669;
+}
+
+.popup-actions .delete {
+  background-color: #ef4444; /* red */
+  color: white;
+}
+
+.popup-actions .delete:hover {
+  background-color: #b91c1c;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .popup-upload {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .popup-upload input[type="text"],
+  .popup-upload input[type="file"] {
+    width: 100%;
+  }
+}

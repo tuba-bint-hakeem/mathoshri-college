@@ -1,0 +1,83 @@
+.modal {
+  width: 480px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  margin-left: 600px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.close {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.row {
+  display: flex;
+  gap: 12px;
+}
+
+.field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #444;
+}
+
+input,
+select,
+textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+textarea {
+  resize: none;
+  height: 90px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+
+}
+
+.cancel {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 6px;
+}
+
+.create {
+  padding: 8px 16px;
+  background: #ffff;
+  color: black;
+  border: none;
+  border-radius: 6px;
+ 
+}
