@@ -1,4 +1,4 @@
-import "./navbar.css";
+import "./Navbar.css";
 import logo from "../images/logo.png";
 
 
