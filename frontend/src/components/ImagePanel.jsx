@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./ImagePanel.css";
 
 // ✅ images import karo
-import img1 from "../images/image1.jpeg";
+import img1 from "../images/Image1.jpeg";
 import img2 from "../images/image.jpeg";
 import img3 from "../images/image3.jpeg";
 
